@@ -1,0 +1,16 @@
+{
+  "name": "Bower sample",
+  "version": "0.0.1",
+  "main": "index.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "git://github.com/components/jquery.git#~2.0.3",
+    "jquery-mobile": "~1.4.0-alpha.1"
+  }
+}
