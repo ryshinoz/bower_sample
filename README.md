@@ -211,6 +211,24 @@ $ bower init
 - `set currently installed components as dependencies?` - 既にインストール済みのパッケージを依存関係に含めるか？
 - `add commonly ignored files to ignore list?` - 共通のignore設定を加えるか？
 
+### インストール
+
+bower.jsonが存在するとそれに従ってパッケージをインストールします
+
+```bash
+$ bower install
+bower jquery#~2.0.3             cached git://github.com/components/jquery.git#2.0.3
+bower jquery#~2.0.3           validate 2.0.3 against git://github.com/components/jquery.git#~2.0.3
+bower jquery-mobile#~1.4.0-alpha.1           cached git://github.com/jquery/jquery-mobile.git#1.4.0-alpha.1
+bower jquery-mobile#~1.4.0-alpha.1         validate 1.4.0-alpha.1 against git://github.com/jquery/jquery-mobile.git#~1.4.0-alpha.1
+bower jquery#~2.0.3                         install jquery#2.0.3
+bower jquery-mobile#~1.4.0-alpha.1          install jquery-mobile#1.4.0-alpha.1
+
+jquery#2.0.3 javascripts/jquery
+
+jquery-mobile#1.4.0-alpha.1 javascripts/jquery-mobile
+```
+
 ### インストール時に設定を追記する
 
 --saveオプションをつける
